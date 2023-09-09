@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    /* height: 2rem; */
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+    background-color: #eee;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 2rem;
+}
+input, textarea{
+    padding: 5px 12px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    display: block;
+}
+.notes{
+    margin: 1.5rem;
+}
+.notes input{
+    margin-bottom: 1.2rem;
+}
+.notes textarea{
+    margin-bottom: .5rem;
+}
+button{
+    padding: 5px 8px;
+    font-size: .9rem;
+    border-radius: .7rem;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+h1{
+    margin-bottom: .5rem;
+}
+.container{
+    margin: 1rem;
+    padding: .5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+.noteCard{
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+}
+.noteCard h2{
+    margin-bottom: .3rem;
+}
+.noteCard p{
+    margin-bottom: .5rem;
+}
+.noteCard .btn{
+    border-radius: 5px;
+}
+
+
+@media (max-width:700px){
+    .container{
+        grid-template-columns: repeat(1, auto);
+    }
+}
